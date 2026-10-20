@@ -1,0 +1,16 @@
+@media (max-width: 650px) {
+  .topbar .nav-links {
+    position: absolute;
+    top: 66px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    padding: 9px 8px;
+    border-bottom: 1px solid #ffffff16;
+    background: #0b1b2af2;
+    font-size: 10px;
+  }
+  .topbar .nav-links a[aria-current="page"] { color: #e8cfa2; }
+}

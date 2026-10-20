@@ -1,0 +1,45 @@
+.hero-copy, .blog-hero-copy { animation: winter-arrive .9s cubic-bezier(.2,.75,.25,1) both; }
+.hero-art, .blog-hero-art { translate: 0 14px; animation: scene-arrive 1.1s .14s cubic-bezier(.2,.75,.25,1) both; }
+.hero-art .moon, .hero-art .mountain-back, .hero-art .mountain-front, .hero-art .cabin, .hero-art .projected-scene, .hero-art .hero-product, .hero-art .scene-stamp,
+.blog-hero-art .blog-art-moon, .blog-hero-art .blog-art-tree, .blog-hero-art .gift, .blog-hero-art .blog-art-caption { translate: var(--depth-x, 0px) var(--depth-y, 0px); transition: translate .18s ease-out; }
+.moon { animation: moon-glow 5.5s ease-in-out infinite alternate; }
+.projector-beam { animation: beam-breathe 4s ease-in-out infinite alternate; transform-origin: left center; }
+.cabin { transform-style: preserve-3d; }
+.product-card { transform-style: preserve-3d; will-change: transform; }
+.product-card:hover { transform: perspective(1100px) rotateX(var(--tilt-x, 0deg)) rotateY(var(--tilt-y, 0deg)) translateY(-5px); }
+.product-visual::after {
+  content: ''; position: absolute; z-index: 7; inset: 0; pointer-events: none; opacity: var(--glare-opacity, 0);
+  background: radial-gradient(circle at var(--pointer-x, 50%) var(--pointer-y, 50%), #ffffff78 0, #ffffff28 12%, transparent 48%);
+  mix-blend-mode: soft-light; transition: opacity .25s ease;
+}
+.product-card:hover .product-visual::after { --glare-opacity: .8; }
+.projector-render, .printer-render { translate: 0 0; animation: product-float 5s ease-in-out infinite; }
+.printer-render { animation-delay: -2.4s; }
+.film-card { animation: film-hover 6s ease-in-out infinite; }
+.reveal { opacity: 0; translate: 0 24px; filter: blur(4px); transition: opacity .72s ease, translate .72s cubic-bezier(.2,.75,.25,1), filter .72s ease; transition-delay: var(--reveal-delay, 0ms); }
+.reveal.is-visible { opacity: 1; translate: 0 0; filter: blur(0); }
+.blog-art-moon, .blog-art-tree, .gift, .blog-art-caption { transition: translate .18s ease-out; }
+.blog-art-moon { animation: moon-glow 5.5s ease-in-out infinite alternate; }
+.gift-one { animation: gift-sway 6s ease-in-out infinite; }
+.gift-two { animation: gift-sway 6s -3s ease-in-out infinite; }
+.scene-glow { animation: ambient-glow 9s ease-in-out infinite alternate; }
+.winter-note, .blog-last-call { perspective: 1000px; }
+.primary-cta, .purchase-cta, .cart-trigger { transition: transform .25s cubic-bezier(.2,.75,.25,1), box-shadow .25s ease, background-color .25s ease; }
+.primary-cta:hover, .purchase-cta:hover, .cart-trigger:hover { transform: translateY(-3px); box-shadow: 0 12px 28px #081a2830; }
+@keyframes winter-arrive { from { opacity: 0; translate: 0 17px; } to { opacity: 1; translate: 0 0; } }
+@keyframes scene-arrive { from { opacity: 0; translate: 0 28px; } to { opacity: 1; translate: 0 0; } }
+@keyframes moon-glow { from { filter: brightness(.92); box-shadow: 0 0 42px #d7c69724; } to { filter: brightness(1.08); box-shadow: 0 0 78px #d7c69758; } }
+@keyframes beam-breathe { from { opacity: .52; } to { opacity: .9; } }
+@keyframes product-float { 0%, 100% { translate: 0 0; } 50% { translate: 0 -5px; } }
+@keyframes film-hover { 0%, 100% { translate: 0 0; } 50% { translate: 0 -6px; } }
+@keyframes gift-sway { 0%, 100% { translate: 0 0; } 50% { translate: 0 -4px; } }
+@keyframes ambient-glow { from { opacity: .65; scale: .96; } to { opacity: 1; scale: 1.04; } }
+@media (max-width: 650px) {
+  .product-card:hover { transform: translateY(-3px); }
+  .product-card { will-change: auto; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-copy, .blog-hero-copy, .hero-art, .blog-hero-art, .moon, .projector-beam, .projector-render, .printer-render, .film-card, .blog-art-moon, .gift, .scene-glow { animation: none !important; }
+  .reveal, .reveal.is-visible { opacity: 1; translate: none; filter: none; transition: none; }
+  .primary-cta, .purchase-cta, .cart-trigger, .product-card, .product-visual::after { transition: none; }
+}

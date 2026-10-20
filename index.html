@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b1b2a" />
+    <meta name="description" content="Découvrez les promos de Noël PromosD'hiver : mini projecteur portable, mini-imprimante photo, recharges papier et idées cadeaux pour les fêtes." />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:site_name" content="PromosD'hiver" />
+    <meta property="og:title" content="PromosD'hiver | Promos de Noël & idées cadeaux" />
+    <meta property="og:description" content="Des idées cadeaux choisies pour les fêtes : cinéma à la maison, souvenirs photo et bons plans d'hiver." />
+    <title>PromosD'hiver | Promos de Noël & idées cadeaux</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="payments.css" />
+    <link rel="stylesheet" href="navigation.css" />
+    <link rel="stylesheet" href="immersive.css" />
+    <link rel="stylesheet" href="projector-gallery.css" />
+  </head>
+  <body>
+    <canvas id="snow" aria-hidden="true"></canvas>
+    <header class="topbar">
+      <a class="brand" href="#accueil" aria-label="PromosD'hiver, accueil">
+        <span class="brand-mark">✳</span><span>Promos<span class="brand-light">D'hiver</span></span>
+      </a>
+      <nav class="nav-links" aria-label="Navigation principale">
+        <a href="#collection">La collection</a>
+        <a href="blog.html">Le blog</a>
+        <a href="#histoire">L'esprit d'hiver</a>
+      </nav>
+      <a class="cart-trigger" href="#collection"><span class="cart-label">Voir la collection</span><span class="bag-icon">↘</span></a>
+    </header>
+
+    <main>
+      <section class="hero" id="accueil">
+        <div class="scene-glow"></div>
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> PROMOS DE NOËL & BONS PLANS D'HIVER</p>
+          <h1>Les petits plaisirs<br />des <em>grandes soirées.</em></h1>
+          <p class="hero-intro">Un film au chaud. Un souvenir à garder.<br />Deux belles idées pour faire durer la magie.</p>
+          <a class="primary-cta" href="#collection">Entrer dans la boutique <span>↗</span></a>
+          <div class="hero-note"><span class="note-stars">✦ ✦ ✦</span><span>Une collection choisie avec soin</span></div>
+        </div>
+        <div class="hero-art" id="heroArt" aria-label="Un chalet chaleureux au cœur d'une forêt enneigée">
+          <div class="moon"></div><div class="mountain mountain-back"></div><div class="mountain mountain-front"></div>
+          <div class="pine pine-one"></div><div class="pine pine-two"></div><div class="pine pine-three"></div>
+          <div class="cabin-shadow"></div>
+          <div class="cabin"><div class="roof"></div><div class="cabin-wall"><div class="window window-left"><i></i></div><div class="window window-right"><i></i></div><div class="door"></div></div><div class="smoke">·　·　·</div></div>
+          <div class="projector-beam"></div><div class="projected-scene"><span>✦</span><b>SOIRÉE<br />CINÉMA</b><small>au coin du feu</small></div>
+          <div class="snowbank snowbank-back"></div><div class="snowbank snowbank-front"></div>
+          <div class="hero-product"><div class="mini-projector"><div class="lens"></div><div class="vent"></div><div class="projector-top"><i></i><i></i><i></i></div></div><span>LE MINI PROJECTEUR</span></div>
+          <div class="scene-stamp"><span>ÉDITION</span><b>HIVER<br />DOUX</b><i>✳</i></div>
+          <div class="scene-caption"><span class="live-dot"></span> UNE PETITE SCÈNE QUI VIT</div>
+        </div>
+        <div class="scroll-hint"><span></span> DÉFILER POUR EXPLORER</div>
+      </section>
+
+      <section class="collection section-wrap" id="collection">
+        <div class="section-heading">
+          <div><p class="eyebrow dark-eyebrow">LA SÉLECTION DE SAISON</p><h2>Trois idées pour<br /><em>des souvenirs.</em></h2></div>
+          <p class="section-aside">Les soirées se prolongent.<br />Les petits moments restent.</p>
+        </div>
+        <div class="product-grid">
+          <article class="product-card card-projector" id="projecteur">
+            <section class="product-visual visual-projector projector-gallery" aria-label="Galerie photo du mini projecteur portable" data-product-gallery="projecteur">
+              <div class="projector-gallery-stage">
+                <button class="gallery-image-button" type="button" data-gallery-open aria-label="Agrandir la photo du mini projecteur">
+                  <img src="assets/images/projecteur/01.jpg" alt="Mini projecteur portable blanc et gris, vue de face avec poignée et objectif" data-gallery-main fetchpriority="high" />
+                </button>
+                <span class="product-tag gallery-tag">SOIRÉES COSY</span>
+                <button class="gallery-arrow gallery-prev" type="button" data-gallery-prev aria-label="Photo précédente">‹</button>
+                <button class="gallery-arrow gallery-next" type="button" data-gallery-next aria-label="Photo suivante">›</button>
+                <span class="gallery-count" data-gallery-count aria-live="polite">1 / 17</span>
+                <span class="gallery-hint">Cliquer pour agrandir</span>
+              </div>
+              <div class="gallery-thumbnails" role="group" aria-label="Choisir une photo du projecteur">
+                <button class="gallery-thumb is-active" type="button" data-gallery-thumb data-src="assets/images/projecteur/01.jpg" data-alt="Mini projecteur portable blanc et gris, vue de face avec poignée et objectif" data-caption="Vue de face du mini projecteur portable" aria-label="Afficher la photo 1 : vue de face" aria-pressed="true"><img src="assets/images/projecteur/01.jpg" alt="" /></button>
+                <button class="gallery-thumb" type="button" data-gallery-thumb data-src="assets/images/projecteur/02.jpg" data-alt="Gros plan du projecteur portable avec son objectif lumineux et sa poignée" data-caption="Gros plan sur l'objectif et le boîtier" aria-label="Afficher la photo 2 : objectif et boîtier" aria-pressed="false"><img src="assets/images/projecteur/02.jpg" alt="" loading="lazy" /></button>
+                <button class="gallery-thumb" type="button" data-gallery-thumb data-src="assets/images/projecteur/03.jpg" data-alt="Projecteur portable vu de trois quarts, poignée relevée" data-caption="Vue de trois quarts du projecteur" aria-label="Afficher la photo 3 : vue de trois quarts" aria-pressed="false"><img src="assets/images/projecteur/03.jpg" alt="" loading="lazy" /></button>
+                <button class="gallery-thumb" type="button" data-gallery-thumb data-src="assets/images/projecteur/04.jpg" data-alt="Projecteur portable vu de face sur fond clair" data-caption="Vue frontale du projecteur" aria-label="Afficher la photo 4 : vue frontale" aria-pressed="false"><img src="assets/images/projecteur/04.jpg" alt="" loading="lazy" /></button>
+                <button class="gallery-thumb" type="button" data-gallery-thumb data-src="assets/images/projecteur/05.jpg" data-alt="Projecteur et accessoires présentés ensemble" data-caption="Projecteur et accessoires présentés par le vendeur" aria-label="Afficher la photo 5 : projecteur et accessoires" aria-pressed="false"><img src="assets/images/projecteur/05.jpg" alt="" loading="lazy" /></button>
+                <button class="gallery-thumb" type="button" data-gallery-thumb data-src="assets/images/projecteur/06.jpg" data-alt="Dimensions indiquées par le vendeur et accessoires du projecteur" data-caption="Dimensions et accessoires montrés sur la fiche vendeur" aria-label="Afficher la photo 6 : dimensions et accessoires" aria-pressed="false"><img src="assets/images/projecteur/06.jpg" alt="" loading="lazy" /></button>
+                <button class="gallery-thumb" type="button" data-gallery-thumb data-src="assets/images/projecteur/07.jpg" data-alt="Vue arrière du projecteur et repérage des ports" data-caption="Vue arrière et connectique indiquée par le vendeur" aria-label="Afficher la photo 7 : connectique arrière" aria-pressed="false"><img src="assets/images/projecteur/07.jpg" alt="" loading="lazy" /></button>
+                <button class="gallery-thumb" type="button" data-gallery-thumb data-src="assets/images/projecteur/08.jpg" data-alt="Détails du boîtier, de la mise au point et des connexions" data-caption="Détails du boîtier et de la mise au point" aria-label="Afficher la photo 8 : détails du projecteur" aria-pressed="false"><img src="assets/images/projecteur/08.jpg" alt="" loading="lazy" /></button>
+                <button class="gallery-thumb" type="button" data-gallery-thumb data-src="assets/images/projecteur/09.jpg" data-alt="Visuel de présentation du projecteur fourni par le vendeur" data-caption="Visuel de présentation du vendeur" aria-label="Afficher la photo 9 : visuel de présentation" aria-pressed="false"><img src="assets/images/projecteur/09.jpg" alt="" loading="lazy" /></button>
+                <button class="gallery-thumb" type="button" data-gallery-thumb data-src="assets/images/projecteur/10.jpg" data-alt="Illustration de la mise au point et de différentes tailles d'image projetée" data-caption="Illustration de mise au point fournie par le vendeur" aria-label="Afficher la photo 10 : mise au point" aria-pressed="false"><img src="assets/images/projecteur/10.jpg" alt="" loading="lazy" /></button>
+                <button class="gallery-thumb" type="button" data-gallery-thumb data-src="assets/images/projecteur/11.jpg" data-alt="Visuel vendeur sur l'éclairage LED du projecteur" data-caption="Présentation de l'éclairage selon le vendeur" aria-label="Afficher la photo 11 : éclairage LED" aria-pressed="false"><img src="assets/images/projecteur/11.jpg" alt="" loading="lazy" /></button>
+                <button class="gallery-thumb" type="button" data-gallery-thumb data-src="assets/images/projecteur/12.jpg" data-alt="Visuel vendeur présentant le projecteur comme modèle portable" data-caption="Présentation du modèle portable par le vendeur" aria-label="Afficher la photo 12 : présentation du modèle" aria-pressed="false"><img src="assets/images/projecteur/12.jpg" alt="" loading="lazy" /></button>
+                <button class="gallery-thumb" type="button" data-gallery-thumb data-src="assets/images/projecteur/13.jpg" data-alt="Exemple de vidéo affichée par le projecteur sur un écran" data-caption="Exemple d'image projetée fourni par le vendeur" aria-label="Afficher la photo 13 : exemple de projection" aria-pressed="false"><img src="assets/images/projecteur/13.jpg" alt="" loading="lazy" /></button>
+                <button class="gallery-thumb" type="button" data-gallery-thumb data-src="assets/images/projecteur/14.jpg" data-alt="Montage vendeur illustrant plusieurs appareils et le projecteur" data-caption="Illustration d'appareils montrée par le vendeur" aria-label="Afficher la photo 14 : appareils illustrés" aria-pressed="false"><img src="assets/images/projecteur/14.jpg" alt="" loading="lazy" /></button>
+                <button class="gallery-thumb" type="button" data-gallery-thumb data-src="assets/images/projecteur/15.jpg" data-alt="Visuel vendeur montrant un téléphone et une scène de projection en famille" data-caption="Illustration d'une utilisation en famille fournie par le vendeur" aria-label="Afficher la photo 15 : usage illustré" aria-pressed="false"><img src="assets/images/projecteur/15.jpg" alt="" loading="lazy" /></button>
+                <button class="gallery-thumb" type="button" data-gallery-thumb data-src="assets/images/projecteur/16.jpg" data-alt="Tableau des caractéristiques présenté par le vendeur" data-caption="Caractéristiques affichées sur le visuel vendeur" aria-label="Afficher la photo 16 : caractéristiques" aria-pressed="false"><img src="assets/images/projecteur/16.jpg" alt="" loading="lazy" /></button>
+                <button class="gallery-thumb" type="button" data-gallery-thumb data-src="assets/images/projecteur/17.jpg" data-alt="Projecteur, emballage et accessoires sur une table" data-caption="Emballage et accessoires photographiés par le vendeur" aria-label="Afficher la photo 17 : emballage" aria-pressed="false"><img src="assets/images/projecteur/17.jpg" alt="" loading="lazy" /></button>
+              </div>
+            </section>
+            <div class="product-info"><div><p class="product-kicker">LE CINÉMA DE POCHE</p><h3>Mini projecteur portable</h3><p class="product-desc">Le grand écran s'invite là où la soirée commence.</p></div><div class="product-buy"><span class="price-label">92,79 €</span><a class="purchase-cta" href="https://buy.stripe.com/dRmbIT1WVgAk5Szaw54AU00" target="_blank" rel="noreferrer">Acheter <span>↗</span></a></div></div>
+          </article>
+          <article class="product-card card-printer" id="imprimante">
+            <section class="product-visual visual-printer projector-gallery printer-gallery" aria-label="Galerie photo de la mini-imprimante photo portable" data-product-gallery="imprimante">
+              <div class="projector-gallery-stage">
+                <button class="gallery-image-button" type="button" data-gallery-open aria-label="Agrandir la photo de la mini-imprimante">
+                  <img src="assets/images/imprimante/01.png" alt="Mini-imprimante photo blanche imprimant une photo depuis un smartphone" data-gallery-main fetchpriority="high" />
+                </button>
+                <span class="product-tag tag-rose gallery-tag">SOUVENIRS INSTANTANÉS</span>
+                <button class="gallery-arrow gallery-prev" type="button" data-gallery-prev aria-label="Photo précédente">‹</button>
+                <button class="gallery-arrow gallery-next" type="button" data-gallery-next aria-label="Photo suivante">›</button>
+                <span class="gallery-count" data-gallery-count aria-live="polite">1 / 5</span>
+                <span class="gallery-hint">Cliquer pour agrandir</span>
+              </div>
+              <div class="gallery-thumbnails" role="group" aria-label="Choisir une photo de la mini-imprimante">
+                <button class="gallery-thumb is-active" type="button" data-gallery-thumb data-src="assets/images/imprimante/01.png" data-alt="Mini-imprimante photo blanche imprimant une photo depuis un smartphone" data-caption="La mini-imprimante et un tirage photo" aria-label="Afficher la photo 1 : imprimante et tirage" aria-pressed="true"><img src="assets/images/imprimante/01.png" alt="" /></button>
+                <button class="gallery-thumb" type="button" data-gallery-thumb data-src="assets/images/imprimante/02.png" data-alt="Visuel vendeur illustrant l'imprimante portable et une connexion Bluetooth" data-caption="Connexion illustrée sur le visuel du vendeur" aria-label="Afficher la photo 2 : connexion illustrée" aria-pressed="false"><img src="assets/images/imprimante/02.png" alt="" loading="lazy" /></button>
+                <button class="gallery-thumb" type="button" data-gallery-thumb data-src="assets/images/imprimante/03.png" data-alt="Visuel vendeur présentant l'application mobile sur Android et iOS" data-caption="Application mobile présentée par le vendeur" aria-label="Afficher la photo 3 : application mobile" aria-pressed="false"><img src="assets/images/imprimante/03.png" alt="" loading="lazy" /></button>
+                <button class="gallery-thumb" type="button" data-gallery-thumb data-src="assets/images/imprimante/04.png" data-alt="Imprimante photo portable et tirages posés sur une table" data-caption="Exemple de tirages photo à partager" aria-label="Afficher la photo 4 : exemple de tirages" aria-pressed="false"><img src="assets/images/imprimante/04.png" alt="" loading="lazy" /></button>
+                <button class="gallery-thumb" type="button" data-gallery-thumb data-src="assets/images/imprimante/05.png" data-alt="Contenu illustré par le vendeur : imprimante, emballage, câble, notice et papier photo" data-caption="Contenu de l'emballage illustré par le vendeur" aria-label="Afficher la photo 5 : contenu de l'emballage" aria-pressed="false"><img src="assets/images/imprimante/05.png" alt="" loading="lazy" /></button>
+              </div>
+            </section>
+            <div class="product-info"><div><p class="product-kicker rose-kicker">LES SOUVENIRS À EMPORTER</p><h3>Mini-imprimante photo portable</h3><p class="product-desc">Une photo choisie, imprimée, et déjà dans vos mains.</p></div><div class="product-buy"><span class="price-label">61,89 €</span><a class="purchase-cta purchase-rose" href="https://buy.stripe.com/fZufZ9453abW6WD8nX4AU01" target="_blank" rel="noreferrer">Acheter <span>↗</span></a></div></div>
+          </article>
+          <article class="product-card card-paper" id="recharges">
+            <section class="product-visual visual-printer projector-gallery printer-gallery paper-gallery" aria-label="Galerie photo des recharges de papier couleur" data-product-gallery="recharges">
+              <div class="projector-gallery-stage">
+                <button class="gallery-image-button" type="button" data-gallery-open aria-label="Agrandir la photo des recharges de papier">
+                  <img src="assets/images/recharge-photo/01.png" alt="Lot de recharges papier photo couleur au format 2 par 3 pouces, imprimante non incluse" data-gallery-main fetchpriority="high" />
+                </button>
+                <span class="product-tag tag-rose gallery-tag">LOT DE 8 RECHARGES</span>
+                <button class="gallery-arrow gallery-prev" type="button" data-gallery-prev aria-label="Photo précédente">‹</button>
+                <button class="gallery-arrow gallery-next" type="button" data-gallery-next aria-label="Photo suivante">›</button>
+                <span class="gallery-count" data-gallery-count aria-live="polite">1 / 2</span>
+                <span class="gallery-hint">Cliquer pour agrandir</span>
+              </div>
+              <div class="gallery-thumbnails" role="group" aria-label="Choisir une photo des recharges papier">
+                <button class="gallery-thumb is-active" type="button" data-gallery-thumb data-src="assets/images/recharge-photo/01.png" data-alt="Lot de recharges papier photo couleur au format 2 par 3 pouces, imprimante non incluse" data-caption="Lot de recharges papier couleur — imprimante non incluse" aria-label="Afficher la photo 1 : lot de recharges" aria-pressed="true"><img src="assets/images/recharge-photo/01.png" alt="" /></button>
+                <button class="gallery-thumb" type="button" data-gallery-thumb data-src="assets/images/recharge-photo/02.png" data-alt="Illustration de papier photo adhésif et de tirages couleur" data-caption="Exemple d'utilisation du papier photo adhésif" aria-label="Afficher la photo 2 : exemple de tirage" aria-pressed="false"><img src="assets/images/recharge-photo/02.png" alt="" loading="lazy" /></button>
+              </div>
+            </section>
+            <div class="product-info"><div><p class="product-kicker rose-kicker">POUR PROLONGER VOS SOUVENIRS</p><h3>Recharge papier photo couleur 2 × 3 pouces</h3><p class="product-desc">Lot de 8 recharges pour imprimante photo de poche. Papier uniquement, imprimante vendue séparément.</p></div><div class="product-buy"><span class="price-label">45,89 €</span><a class="purchase-cta purchase-rose" href="https://buy.stripe.com/eVqeV5dFDfwg0yfdIh4AU02" target="_blank" rel="noopener noreferrer">Acheter <span>↗</span></a></div></div>
+          </article>
+        </div>
+        <p class="price-note">Paiement hébergé par Stripe · options et total confirmés sur la page sécurisée.</p>
+      </section>
+
+      <section class="winter-note" id="histoire">
+        <div class="note-deco left-deco">✳</div><div class="note-content"><p class="eyebrow">LE PETIT RITUEL</p><h2>On ralentit.<br /><em>On profite.</em></h2><p>Un plaid, une lumière douce et un souvenir à imprimer.<br />L'hiver peut bien attendre un peu.</p><a href="#collection" class="text-link">Trouver mon prochain rituel <span>→</span></a></div><div class="note-deco right-deco">✷</div><div class="note-snowflake">❄</div>
+      </section>
+    </main>
+
+    <dialog class="projector-lightbox" data-product-lightbox="projecteur" aria-label="Photos du mini projecteur portable">
+      <button class="lightbox-close" type="button" data-lightbox-close aria-label="Fermer la galerie">×</button>
+      <button class="lightbox-arrow" type="button" data-lightbox-prev aria-label="Photo précédente">‹</button>
+      <figure><img src="assets/images/projecteur/01.jpg" alt="" data-lightbox-image /><figcaption data-lightbox-caption></figcaption></figure>
+      <button class="lightbox-arrow" type="button" data-lightbox-next aria-label="Photo suivante">›</button>
+    </dialog>
+    <dialog class="projector-lightbox" data-product-lightbox="imprimante" aria-label="Photos de la mini-imprimante photo portable">
+      <button class="lightbox-close" type="button" data-lightbox-close aria-label="Fermer la galerie">×</button>
+      <button class="lightbox-arrow" type="button" data-lightbox-prev aria-label="Photo précédente">‹</button>
+      <figure><img src="assets/images/imprimante/01.png" alt="" data-lightbox-image /><figcaption data-lightbox-caption></figcaption></figure>
+      <button class="lightbox-arrow" type="button" data-lightbox-next aria-label="Photo suivante">›</button>
+    </dialog>
+    <dialog class="projector-lightbox" data-product-lightbox="recharges" aria-label="Photos des recharges de papier photo">
+      <button class="lightbox-close" type="button" data-lightbox-close aria-label="Fermer la galerie">×</button>
+      <button class="lightbox-arrow" type="button" data-lightbox-prev aria-label="Photo précédente">‹</button>
+      <figure><img src="assets/images/recharge-photo/01.png" alt="" data-lightbox-image /><figcaption data-lightbox-caption></figcaption></figure>
+      <button class="lightbox-arrow" type="button" data-lightbox-next aria-label="Photo suivante">›</button>
+    </dialog>
+    <footer class="footer"><a class="brand footer-brand" href="#accueil"><span class="brand-mark">✳</span><span>Promos<span class="brand-light">D'hiver</span></span></a><span>De belles idées pour les journées froides.</span><a href="blog.html">Le blog de Noël</a><span>© 2026 PromosD'hiver</span></footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

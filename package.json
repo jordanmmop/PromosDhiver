@@ -1,0 +1,16 @@
+{
+  "name": "promosdhiver-storefront",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=22.9.0"
+  },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env server.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "helmet": "^8.1.0",
+    "stripe": "^18.5.0"
+  }
+}

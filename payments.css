@@ -1,0 +1,47 @@
+.cart-trigger:hover {
+  border-color: #e8cfa2aa;
+  background: #ffffff14;
+}
+
+.purchase-cta {
+  min-width: 88px;
+  height: 35px;
+  padding: 0 12px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: #1f3948;
+  color: #fff;
+  border-radius: 20px;
+  font-size: 9px;
+  font-weight: 700;
+  transition: transform .2s, background .2s;
+}
+
+.purchase-cta:hover {
+  transform: translateY(-2px);
+  background: #b18b6a;
+}
+
+.purchase-rose {
+  background: #997671;
+}
+
+.purchase-rose:hover {
+  background: #a88580;
+}
+
+@media (max-width: 650px) {
+  .cart-label {
+    display: inline;
+    font-size: 9px;
+  }
+  .cart-trigger {
+    gap: 6px;
+    padding: 7px 10px;
+  }
+  .bag-icon {
+    font-size: 14px;
+  }
+}
